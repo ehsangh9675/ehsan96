@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #layout{
+            width: 600px;
+            height: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #header{
+            border: 1px solid blue;
+            height: 200px;
+            /* width: 100%; */
+            width: calc(100% - 2px);
+        }
+        #body{
+            border: 1px solid black;
+            height: 500px;
+            width: calc(100% - 2px);
+        }
+        #sidebar{
+            border: 1px solid black;
+            margin: 5px;
+            height: calc(100% - 12px);
+            width: calc(30% - 12px);
+            float: right;
+        }
+        #content{
+            border: 1px dashed rgb(53, 0, 128);
+            margin: 5px;
+            height: calc(100% - 12px);
+            width: calc(70% - 12px); 
+            float: right;           
+        }
+        #footer{
+            border: 1px solid teal;
+            height: 200px;
+            width: calc(100% - 2px);
+
+        } 
+        @media only screen and (max-width: 600px ){
+        #sidebar{
+           height: calc(50% - 12px);
+           width: calc(100% - 12px);
+
+        }
+        #content{
+           height: calc(50% - 12px);
+           width: calc(100% - 12px);
+
+        } 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div id="header"></div>
+        <div id="body">
+            <div id="sidebar"></div>
+            <div id="content"></div>
+        </div>
+        <div id="footer"></div>
+        </div>
+</body>
+</html>
